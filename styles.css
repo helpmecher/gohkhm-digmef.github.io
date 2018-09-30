@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body{
+	background:url(images/stripes.png);
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+p{
+	color:#666666;
+}
+#container{
+	width:955px;
+	margin:0 auto;
+	background:white;
+	border:10px solid #B117A3;
+	box-shadow: 0px 2px 2px 2px #717171;
+}
+#content{
+	padding:0 20px;
+    width:60%;
+    float:left;
+}
+
+#sidebar{
+	padding: 0 20px;
+	border-left: medium dotted #B117A3;
+	width:25%;
+	text-align:center;
+	color:#970099;
+	margin-left:20px;
+    float:left;
+}
+#navbar {
+	text-align: center;
+	text-transform:uppercase;
+}
+
+.floatLeft{
+	float:left;
+} 
+.floatRight{
+	float:right;
+}
+
+footer{
+    clear:both;
+	padding:20px;
+	border-top:medium dotted #B117A3;
+}
+#xtra{
+	margin-right:20px;
+}
+.thumbnail{
+	width:100px;
+	height:auto;
+	margin-right:10px;
+}
+
+/* media query for 922px */
+@media only screen and (max-width: 992px) {
+	#container { width:90% }
+	img {
+        max-width:100%;
+        height:auto
+    }
+	footer img {height:48px}
+}
+
+/* media query for 900px */
+@media only screen and (max-width: 900px){
+	#content, #sidebar {width:90%}
+    
+	footer {text-align:center}
+	.floatRight { float:none }
+}
+
+/* media query for 520 and below */
+@media only screen and (max-width: 520px){
+	#banner { display:none }
+	#navbar::before { 
+        content:"FMS Souvenir Store"; 
+        display:block; 
+        font-size:2em; 
+        padding:10px; 
+        color:white;
+        background-color:#B117A3;
+        margin-bottom:10px 
+    }
+	h1 {
+        font-size:1.2em; 
+        text-align:center
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
